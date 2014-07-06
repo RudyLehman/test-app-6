@@ -42,6 +42,11 @@ angular.module('bucketList.controllers', [])
                     }
                 });
             }
+
+            $scope.testing = function()
+            {
+                alert("Testing");
+            }
         }
     ])
 
