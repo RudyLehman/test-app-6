@@ -14,7 +14,7 @@ angular.module('bucketList', ['ionic', 'firebase', 'bucketList.controllers'])
             $rootScope.userEmail = null;
             $rootScope.baseUrl = 'https://ionictodoapp.firebaseio.com/';
 
-            console.log($rootScope.baseUrl);
+            //console.log($rootScope.baseUrl);
 
             var authRef = new Firebase($rootScope.baseUrl);
             $rootScope.auth = $firebaseAuth(authRef);
@@ -47,7 +47,7 @@ angular.module('bucketList', ['ionic', 'firebase', 'bucketList.controllers'])
 
             $rootScope.checkSession = function() {
 
-                console.log("checkSessio app.jsn");
+                //console.log("checkSessio app.js");
 
                 var auth = new FirebaseSimpleLogin(authRef, function(error, user) {
                     if (error) {

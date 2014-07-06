@@ -3,7 +3,7 @@ angular.module('bucketList.controllers', [])
         '$scope', '$rootScope', '$firebaseAuth', '$window',
         function($scope, $rootScope, $firebaseAuth, $window) {
             // check session
-            console.log("checkSession controllers.js");
+            //console.log("checkSession controllers.js");
             $rootScope.checkSession();
 
             $scope.user = {
@@ -12,7 +12,7 @@ angular.module('bucketList.controllers', [])
             };
             $scope.validateUser = function() {
 
-                alert("validateUser");
+                //alert("validateUser");
 
                 $rootScope.show('Please wait.. Authenticating');
                 var email = this.user.email;
@@ -43,8 +43,9 @@ angular.module('bucketList.controllers', [])
                 });
             }
 
-            $scope.testing = function()
+            $scope.testing = function(oThis)
             {
+                console.log(oThis);
                 alert("Testing");
             }
         }
