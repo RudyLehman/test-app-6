@@ -11,6 +11,9 @@ angular.module('bucketList.controllers', [])
                 password: ""
             };
             $scope.validateUser = function() {
+
+                alert("validateUser");
+
                 $rootScope.show('Please wait.. Authenticating');
                 var email = this.user.email;
                 var password = this.user.password;
